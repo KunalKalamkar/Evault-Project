@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 240, 142);
+           
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 20px;
+            background-color: #ddd;
+            width: 500px;
+            
+            margin-left: 25%;
+            margin-right: 20%;
+            border-radius: 20px;
+                box-shadow: rgb(72, 61, 61) 5px 5px 5px 5px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        input[type=text],input[type=password],input[type=email]{
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px o;
+            display: inline-block;
+            border: none;
+            background: #fff;
+        }
+        input[type=text]:focus,input[type=password]:focus{
+            background-color: #fff;
+              
+        }
+        hr{
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        .registerbtn{
+            background-color: black;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .registerbtn:hover{
+            opacity: 1;
+            /*color: rgb(243, 239, 247);*/
+            background-color:rgb(77, 77, 195);
+            
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+        
+    <form method="POST">
+         
+        
+        <div class="container">
+            <h1>Login</h1>
+            
+            <hr>
+            <label for="Username"><b>Username</b></label>
+            <input type="text" placeholder="Enter your username" name="username "id="username" required><br>
+            
+                     
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter your email" name="email" id="email" required>
+            
+           
+            <hr>
+            <!--<p> By creating an account you agree to our <a href="#"> Terms & Privacy</a>.</p>-->
+            <button type="submit" class="registerbtn"> Register</button>
+        </div>
+    </form>
+    </body>
+</html>

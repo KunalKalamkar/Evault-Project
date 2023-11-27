@@ -1,0 +1,62 @@
+{% load static%}
+<!DOCTYPE html>
+<title>eVault</title>
+<head>
+    <meta name="viewport" content="width-device-width,initial-scale=1"></head>
+<style>
+    body{
+        background-color: rgb(191, 191, 178);
+    }
+    a{
+        /*color: black;*/
+        text-decoration: none;  
+    }
+    
+    
+    .image{
+        text-size-adjust: 10%;
+        margin-top: 10%;
+        text-align: center;
+        size: 1000px;
+       
+    }
+    .image img{
+        max-width: 100%;  
+        height: auto;  
+        
+    }
+    .search {
+        text-align: center;
+        
+    }
+    .search button{
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .search button:hover{
+        background-color: rgb(231, 231, 145);
+    }
+    .search button a{
+        color: rgb(14, 13, 13);
+        padding: 10px;
+    }
+    
+</style>
+<body>
+    
+    
+        
+    {% include "navbar.html"%}
+        <div class="image"><img src="../static/evault_big-removebg-preview.png" width="300 " height="300"></div>
+        <div class="search" id="upld">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <button><a href="search/" id="search"> <i class="fa fa-search"></i> <b>Search</b></a></button>
+            
+            <button ><a href="upload/" id="upload"><i class="fa fa-upload"></i> <b>Upload</b></a></button>
+            
+        </div>
+        
+    </div>
+</body>

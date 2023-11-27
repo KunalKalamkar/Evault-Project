@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload page</title>
+    
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-color: rgb(249, 249, 200);
+        }
+        .column {
+	  flex: 33.33%;
+	  height: 100px;
+	  padding: 10px;
+	  margin: 60px;
+	 
+	}
+	.container {
+	   display: flex;
+	}	
+       input[type=text],input[type=password],input[type=email]{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 22px o;
+            display: inline-block;
+            
+            border-radius: 10px;
+            background: white;
+        }
+        input[type=text]:focus,input[type=password]:focus{
+            background-color: white;
+              
+        }
+        input[type="date" i]{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 22px o;
+            display: inline-block;
+            
+            border-radius: 10px;
+            background: white;
+        
+        }
+        .upload button{
+            margin-left: 50%;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 10px;
+            background-color: rgb(206, 206, 75);
+        }
+        .upload button:hover{
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }        
+    </style>
+</head>
+<body>
+    <h1> Upload</h1>
+    <hr>
+    <div class="container">
+        <div class="column">
+        <label for="Case no"><b>Case no</b></label><br>
+        <input type="text" placeholder="Enter case no." name="case" id="case"required><br><br>
+        
+        <label for="Judgement date"><b>Judgement Date</b></label><br>
+        <input type="date" name="date" id="date" required><br><br>
+        <label for="upload file"><b>Upload File</b></label><br>
+    <input type="file" name="file"> 
+        </div>
+        <div class="column">
+        <label for=" Diary no"><b>Diary no</b></label><br>
+        <input type="text" placeholder="Enter diary no." name="diary" id="diary" required><br><br>
+        
+        <label for="Petitioner"><b>Petitioner</b></label><br>
+        <input type="text"  name="Petitioner" id="Petitioner"required>
+            
+        </div>
+        
+        <div class="column">
+        <label for="Case no"><b>Judge Name</b></label><br>
+        <input type="text" placeholder="Enter Judge name." name="case" id="case"required><br><br>
+            
+        <label for="Respondent"><b>Respondent</b></label><br>
+        <input type="text" name="Respondent" id="Respondent"required>
+        
+        
+        </div>
+        
+    </div>
+    <div class="upload">
+      <br><br><br> 
+    <button type="submit" value="Upload"><b>Upload</b></button>
+    </div>
+    
+    
+    
+    
+    
+    
+   
+</div>
+    
+</body>
+</html>
